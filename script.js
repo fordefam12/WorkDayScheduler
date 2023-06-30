@@ -18,12 +18,12 @@ $(function () {
 
   // console.log($('.saveBtn').parent().eq(0).children().eq(1).children(0).val);
  }) 
- var hour9 = $('#hour-9')
- var container = $(`.container-lg`)
+
+  var container = $(`.container-lg`);
  container.on('click', '.saveBtn', function (event) {
-  
-  console.log($(event.target).parent().children().eq(1).val());
-  localStorage.setItem("hour9" , JSON.stringify($(event.target).parent().children().eq(1).val()))
+  var input = $(event.target).parent().children().eq(1).val();
+  console.log(input)
+  localStorage.setItem("hour9" , JSON.stringify($(event.target).parent().children().eq(1).val()));
 
  })
  
