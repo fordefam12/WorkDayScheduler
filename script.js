@@ -68,19 +68,7 @@ $(function () {
 
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each description be used to do this?
 
-  // localStorage.setItem('target', JSON.stringify(input));
-  // localStorage.setItem("9", JSON.stringify($("#hour-9 .description").val));
-  // localStorage.setItem("10", JSON.stringify($("#hour-10 .description").val));
-  // localStorage.setItem("11", JSON.stringify($("#hour-11 .description").val));
-  // localStorage.setItem("12", JSON.stringify($("#hour-12 .description").val));
-  // localStorage.setItem("1", JSON.stringify($("#hour-1 .description").val));
-  // localStorage.setItem("2", JSON.stringify($("#hour-2 .description").val));
-  // localStorage.setItem("3", JSON.stringify($("#hour-3 .description").val));
-  // localStorage.setItem("4", JSON.stringify($("#hour-4 .description").val));
-  // localStorage.setItem("5", JSON.stringify($("#hour-5 .description").val));
   $("#hour-9 .description").val(localStorage.getItem("9"));
   $("#hour-10 .description").val(localStorage.getItem("10"));
   $("#hour-11 .description").val(localStorage.getItem("11"));
@@ -90,7 +78,7 @@ $(function () {
   $("#hour-15 .description").val(localStorage.getItem("15"));
   $("#hour-16 .description").val(localStorage.getItem("16"));
   $("#hour-17 .description").val(localStorage.getItem("17"));
-  console.log(("5", JSON.stringify($("#hour-5 .description").val)));
+ 
   // TODO: Add code to display the current date in the header of the page.
 
   $("#currentDay").text(today.format("dddd, MMMM D YYYY, h:mm:ss "));
