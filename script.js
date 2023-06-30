@@ -26,7 +26,12 @@ $(function () {
   function scheduler () {
     var now = moment().hour();
     $(".row").each(function () {
-      var go = parseInt
+      var go = parseInt($(this).attr("id").split("hour")[1]);
+      if (go < now){
+        $(this).removeClass("presnt");
+        $(this).removeClass("presnt");
+        $(this).removeClass("presnt");
+      }
     })
   }
 
