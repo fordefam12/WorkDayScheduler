@@ -45,7 +45,7 @@ $(function () {
   // current hour in 24-hour time?
   function scheduler() {
     var now = parseInt(today.format("H"));
-    console.log(typeof now);
+    // console.log(typeof now);
     $(".row").each(function () {
       // console.log(this);
       var go = parseInt($(this).attr("id").split("-")[1]);
@@ -57,17 +57,15 @@ $(function () {
       } else {
         $(this).addClass("future");
       }
-      
-      console.log(typeof go);
+
+      // console.log(typeof go);
       // localStorage.setItem("appointment", JSON.stringify(scheduler));
       // console.log(now);
       // console.log(go);
     });
-
-
   }
   scheduler();
- 
+
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
